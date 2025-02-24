@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@300&display=swap');
+
+:root {
+  --primary: #000000;
+  --primary-accent: #FFD700;
+}
+
+body {
+  @apply bg-gray-50;
+}
+
+/* Utility classes */
+.text-primary-accent {
+  color: var(--primary-accent);
+}
+
+/* Logo styles */
+.logo-text {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: black;
+}
+
+.logo-subtext {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  color: black;
+}
+
+/* Estética VM specific styles */
+.logo-estetica {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.logo-vm {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+}
+
+/* Calendar customization */
+.rbc-calendar {
+  @apply font-sans;
+}
+
+.rbc-toolbar button {
+  @apply bg-white border border-gray-300 text-gray-700 hover:bg-gray-50;
+}
+
+.rbc-toolbar button.rbc-active {
+  @apply bg-primary text-primary-accent;
+}
+
+.rbc-event {
+  @apply bg-primary text-primary-accent;
+}
+
+.rbc-today {
+  @apply bg-primary/5;
+}
+
+.rbc-off-range-bg {
+  @apply bg-gray-50;
+}
+
+.rbc-header {
+  @apply py-2 font-semibold;
+}
+
+.rbc-event.rbc-selected {
+  @apply bg-primary/90;
+}
+
+.rbc-event-content {
+  @apply text-sm;
+}
